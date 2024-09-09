@@ -1,0 +1,102 @@
+.bg-img {
+    background-image: url("../assets/img/header-bg.jpg");
+    background-repeat: none;
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    height: 110vh;
+    width: 100%;
+    opacity: 100%;
+}
+.bg-contact{
+    background-image:url("../assets/img/map-image.png");
+    background-color: #212529;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+}
+.navbar-cont{
+    position: fixed;
+    z-index: 999;
+    top: 14px;
+}
+.services-section i{
+    font-size: 80px;
+    background-color: #ffc800;
+}
+.overlay-img-1,
+.overlay-img-2,
+.overlay-img-3,
+.overlay-img-4,
+.overlay-img-5,
+.overlay-img-6{
+    position: relative;
+}
+
+.overlay-1,
+.overlay-2,
+.overlay-3,
+.overlay-4,
+.overlay-5,
+.overlay-6{
+    position: absolute;
+    background-color: #ffc800;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 27% 0%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.overlay-img-1:hover .overlay-1,
+.overlay-img-2:hover .overlay-2,
+.overlay-img-3:hover .overlay-3,
+.overlay-img-4:hover .overlay-4,
+.overlay-img-5:hover .overlay-5,
+.overlay-img-6:hover .overlay-6 {
+opacity: 1;
+cursor: pointer;
+}
+
+.active{
+    color: #ffc800 !important;
+}
+.active a:hover{
+    color: #ffc800 !important;
+}
+/* --------------------Media Queries------------------- */
+
+@media only screen and (max-width:775px){
+.bg-img{
+    height: 80vh !important;
+}  .about{
+    width: 100% !important;
+}  
+.about-img{
+    width: 30% !important;
+}
+.about-txt{
+    width: 70% !important;
+    text-align: start !important;
+}
+.about-reverse{
+    flex-direction: row-reverse !important;
+}
+}
+@media only screen and (max-width:995px){
+html{
+font-size: 14px !important;
+    }
+.navbar-cont{
+    background: #212529;
+} 
+.navbar-cont .navbar-toggler{
+    background: white !important;
+}
+.navbar-cont ul li a{
+    color: white !important;
+}  
+}
